@@ -12,6 +12,7 @@ unique_ptr<StdApp> StdApp::instance()
 
 void MsgBus::setup()
 {
+	//setClientType("hub");
 	//LOGDEBUG("Msg Bus - setup");
 }//void MsgBus::setup()
 
