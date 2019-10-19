@@ -3,6 +3,8 @@
 
 using namespace StdAppLib;
 
+/** A simple message bus
+ */
 class MsgBus :public StdApp
 {
 public:

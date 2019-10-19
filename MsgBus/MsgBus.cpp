@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <iostream>
+#include <vector>
 #include "MsgBus.h"
 
 using namespace std;
@@ -12,12 +13,15 @@ unique_ptr<StdApp> StdApp::instance()
 
 void MsgBus::setup()
 {
-	//setClientType("hub");
-	//LOGDEBUG("Msg Bus - setup");
+    //set object type as msg bus
+    setClientType("hub");
+
+	log(LOGINFO, "Msg Bus - setup");
+    
 }//void MsgBus::setup()
 
 
 void MsgBus::onIdle()
 {
-	//LOGDEBUG("Msg Bus - onIdle");
+   //nothing required
 }//void MsgBus::onIdle()
