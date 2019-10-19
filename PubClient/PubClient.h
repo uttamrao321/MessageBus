@@ -3,6 +3,8 @@
 
 using namespace StdAppLib;
 
+/** A simple publisher
+ */
 class PubClient :public StdApp
 {
 public:
@@ -10,4 +12,5 @@ public:
 	void setup()  override;
 	void onIdle() override;
 
+    string dummyInfo();
 };
